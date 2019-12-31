@@ -5,4 +5,4 @@ Contributions are always welcome, no matter how large or small. Before contribut
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under its [MIT license](LICENSE).
+By contributing to this project, you agree that your contributions will be licensed under its [CC BY 4.0](LICENSE).
