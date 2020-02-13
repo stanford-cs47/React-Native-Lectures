@@ -1,6 +1,6 @@
 # React Native Open Source Curriculum
 Welcome to our CS resources!
-To view the Stanford version of this course, visit [CS 47 website](http://cs47.stanford.edu/). To see the viewable version of this repo, visit https://stanford-cs47.github.io/open-source-lectures/
+To view the Stanford version of this course, visit [CS 47 website](http://cs47.stanford.edu/). To see the viewable version of this repo, visit https://stanford-cs47.github.io/React-Native-Lectures/
 
 ## 👏 How to Contribute
 
