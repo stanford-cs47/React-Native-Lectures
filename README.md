@@ -22,4 +22,4 @@ The lectures are CC BY 4.0 licensed, as found in the [LICENSE](LICENSE) file.
 
 ## 🖥 Exercises
 
-The exercises could by found at XX and are licensed under MIT as found in their repo.
+The exercises could by found at https://github.com/stanford-cs47/React-Native-Demos and are licensed under MIT as found in their repo.
