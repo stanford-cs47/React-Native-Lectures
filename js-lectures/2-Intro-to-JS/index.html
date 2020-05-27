@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<!-- <html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-montserrat theme-color-white-blue"> -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>deck: Slides</title>
+		<meta name="description" content="Slides" />
+
+		<!-- 		<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="FSkc0yzcjRtFMzSpQMZdvGWGyzvKosaZHkZRh5M6HZYQDFShSQ8kRpfPCIswev0aSxz2XxUyRHoOb6MnEmx7Jw==" />
+		<style id="user-css-output" type="text/css"></style> -->
+
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/reveal.css" />
+		<link rel="stylesheet" href="../css/theme/cs47.css" id="theme" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css" />
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement("link");
+			link.rel = "stylesheet";
+			link.type = "text/css";
+			link.href = window.location.search.match(/print-pdf/gi)
+				? "css/print/pdf.css"
+				: "css/print/paper.css";
+			document.getElementsByTagName("head")[0].appendChild(link);
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="title-slide">
+					<title-slide-content>
+						<title-slide-header>
+							<h2>CS 47: Cross-Platform Mobile Development</h2>
+							<h4>
+								Lecture 1B: Introduction to Javascript (ES6)
+							</h4>
+						</title-slide-header>
+						<div class="spacer"></div>
+						<title-slide-footer>
+							<resources>
+								<span>https://class.website</span><br />
+								<img
+									src="../assets/slack_logo.png"
+									class="logo"
+								/>
+								<span>slack.link</span>
+							</resources>
+							<instructors>
+								<span>Faculty Advisor</span><br />
+								<span>Instructor #1</span><br />
+								<br /><br />
+								<span class="schedule">Fall 2019</span>
+							</instructors>
+						</title-slide-footer>
+					</title-slide-content>
+				</section>
+				<section>
+					<slide-image-content>
+						<feature-image>
+							<img
+								src="../assets/slack_channel.png"
+								style="width: 100%; height: 100%; border: 0px;"
+							/>
+						</feature-image>
+						<content>
+							<span class="header">Join our Slack</span>
+							<span class="link"
+								>https://SlackInvitation.link</span
+							>
+						</content>
+					</slide-image-content>
+				</section>
+				<section>
+					<slide-image-content>
+						<feature-image>
+							<img
+								src="../assets/class_website.png"
+								style="width: 70%; height: 70%; border: 0px;"
+							/>
+						</feature-image>
+						<content>
+							<span class="header">Keep up with the website</span>
+							<span class="link">https://class.website</span>
+						</content>
+					</slide-image-content>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+</div>
+<img alt="React" src="../assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Why do you want to take this class?
+(Answers from last lecture exit ticket)
+
+</div>
+<img alt="React" src="../assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+</div>
+<img alt="React" src="../assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+<div class="vertical-spacer"></div>
+
+## Overview for today
+* Introduce Javascript Basics
+* Introduce Babel
+* Introduce JSX
+* Create an application from scratch
+    * Breakdown React Native project file structure
+
+</div>
+<img alt="React" src="../assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section>
+					<slide-interstitial>
+						<h2><u>https://es6console.com/</u></h2>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Variables
+
+In ES6, variables:
+* Don't have types
+* But must be declared before using them
+
+* Global variables
+
+```js
+var x = 1;
+
+if (x === 1) {
+  var x = 2;
+  console.log(x);
+  // expected output: 2
+}  
+
+console.log(x); // expected output: 2
+```
+
+</div>
+<img alt="ES6" src="../assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea
+					>
+				</section>
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: "../plugin/markdown/marked.js" },
+					{ src: "../plugin/markdown/markdown.js" },
+					{ src: "../plugin/notes/notes.js", async: true },
+					{ src: "../plugin/highlight/highlight.js", async: true },
+				],
+			});
+		</script>
+	</body>
+</html>
