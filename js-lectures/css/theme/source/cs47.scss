@@ -62,7 +62,6 @@ $blockMargin: 10px;
 				border: none;
 				box-shadow: none;
 				width: 180px;
-				//float: right;
 			}
 		}
 		&.title-slide {
@@ -71,7 +70,17 @@ $blockMargin: 10px;
 	}
 
 	pre {
-		font-size: 0.8em;
+		font-size: 0.7em;
+	}
+
+	table {
+		width: 95%;
+	}
+
+	table,
+	th,
+	td {
+		border: 1px solid grey;
 	}
 
 	.slides {
@@ -173,6 +182,31 @@ $blockMargin: 10px;
 		justify-content: center;
 		h2 {
 			color: #0097a7;
+		}
+	}
+
+	carousel {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+		height: 100px;
+
+		img {
+			&.item {
+				display: block;
+				width: auto;
+				height: auto;
+				border: none;
+				box-shadow: none;
+
+				&.inactive {
+					opacity: 30%;
+				}
+
+				&.hidden {
+					opacity: 0%;
+				}
+			}
 		}
 	}
 }

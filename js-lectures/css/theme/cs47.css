@@ -287,7 +287,15 @@ body {
   height: 100%; }
 
 .reveal pre {
-  font-size: 0.8em; }
+  font-size: 0.7em; }
+
+.reveal table {
+  width: 95%; }
+
+.reveal table,
+.reveal th,
+.reveal td {
+  border: 1px solid grey; }
 
 .reveal .slides {
   text-align: left; }
@@ -360,3 +368,19 @@ body {
   justify-content: center; }
   .reveal slide-interstitial h2 {
     color: #0097a7; }
+
+.reveal carousel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100px; }
+  .reveal carousel img.item {
+    display: block;
+    width: auto;
+    height: auto;
+    border: none;
+    box-shadow: none; }
+    .reveal carousel img.item.inactive {
+      opacity: 30%; }
+    .reveal carousel img.item.hidden {
+      opacity: 0%; }
