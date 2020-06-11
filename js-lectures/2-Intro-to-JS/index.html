@@ -606,6 +606,170 @@ self.view.layer.addSublayer(textLayer)
 					    </div>
 					</div>
 				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item inactive" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item inactive" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<three-column>
+						<div class="item column inactive">
+<pre><code class="swift">
+let textLayer = CATextLayer()
+...        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						  <div>
+						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
+						  <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						</div>
+						</div>
+						<div class="item">
+							<br />
+						</div>
+						<div class="item">
+							<br />
+						</div>
+					</three-column>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item hidden" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item hidden" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<div style="display:flex; align-items: flex-end; justify-content: space-between;">
+						<div style="width: 50%;">
+<pre><code class="java">
+LinearLayout myLayout = findViewById(R.id.main);
+
+Button myButton = new Button(this);
+
+myButton.setLayoutParams(new LinearLayout.LayoutParams(
+
+LinearLayout.LayoutParams.MATCH_PARENT,
+LinearLayout.LayoutParams.MATCH_PARENT));
+
+myLayout.addView(myButton)
+</code></pre>
+						</div>
+						<div style="display:flex; align-items: flex-start; justify-content: flex-end;">
+						  <img alt="iOS" src="assets/android_layout_1.png" style="border: none; width: 200px;" />
+						  <img alt="iOS" src="assets/android_layout_2.png" style="border: none; width: 200px;" />
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item hidden" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item hidden" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<div style="display:flex; align-items: flex-end; justify-content: space-between;">
+						<div style="width: 50%;">
+							<img alt="Android" src="assets/android_layout_xml.png" style="border: none; width: 450px;" />
+						</div>
+						<div style="display:flex; align-items: flex-start; justify-content: flex-end;">
+						  <img alt="Android" src="assets/android_layout_1.png" style="border: none; width: 200px;" />
+						  <img alt="Android" src="assets/android_layout_2.png" style="border: none; width: 200px;" />
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item inactive" />
+						<img alt="Android" src="assets/logo_android.png" class="item inactive"/> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<three-column>
+						<div class="item column inactive">
+<pre><code class="swift">
+let textLayer = CATextLayer()
+...        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						  <div>
+						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
+						  <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						</div>
+						</div>
+						<div class="item inactive">
+							<div style="overflow: hidden;">
+							  <img alt="Android" src="assets/android_layout_xml.png" style="border: none; width: 300px; min-width: 300px;" />
+						    </div>
+						    <div style="overflow: visible;">
+							  <img alt="Android" src="assets/android_layout_2.png" style="border: none; width: 200px; min-width: 200px;" />
+						    </div>
+						</div>
+						<div class="item">
+							<br />
+						</div>
+					</three-column>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>How do we build layouts in React Native?</h4>
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>How do we build layouts in React Native?</h4>
+						<p style="color: #666666;">Programmatically (in markup style) — this means no drag and drop interface builder.</p>
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Originally, the process of creating a View using React looked like this:</h4>
+<pre style="width: 50%;"><code class="javascript">
+var ourView = React.createElement(View, null);
+</code></pre>						
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<div style="width: 115px; position: relative;">
+							<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 100%;" />
+						</div>
+						<div style="left: 46%; top: 15px; width: 115px; position: absolute;">
+							<img alt="React" src="assets/whiteboard.png" class="feature" style="
+				width: 60%;" />
+						</div>
+						<h4>Originally, the process of creating a View using React looked like this:</h4>
+<pre style="width: 50%;"><code class="javascript">
+var ourView = React.createElement(View, null);
+</code></pre>						
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Originally, the process of nesting Text within a View using React looked like this:</h4>
+<pre style="width: 50%;"><code class="javascript">
+var ourNestedView = React.createElement(
+  View,
+  {
+    foo: 'bar'},
+  React.createElement(
+    Text,
+    null,
+    '42'
+  )
+);
+</code></pre>						
+					</slide-interstitial>
+				</section>
 			</div>
 		</div>
 

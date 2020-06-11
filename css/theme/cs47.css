@@ -364,6 +364,7 @@ body {
 
 .reveal slide-interstitial {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
   .reveal slide-interstitial h2 {
@@ -384,3 +385,16 @@ body {
       opacity: 30%; }
     .reveal carousel img.item.hidden {
       opacity: 0%; }
+
+.reveal three-column {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around; }
+  .reveal three-column div.item {
+    display: flex;
+    align-items: center;
+    width: 33%; }
+    .reveal three-column div.item.inactive {
+      opacity: 30%; }
+    .reveal three-column div.item.column {
+      flex-direction: column; }
