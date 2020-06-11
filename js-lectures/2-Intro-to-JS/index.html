@@ -770,6 +770,85 @@ var ourNestedView = React.createElement(
 </code></pre>						
 					</slide-interstitial>
 				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Originally, the process of nesting Text within a View using React looked like this:</h4>
+						<div style="display: flex; width: 100%;">
+<pre style="width: 50%;"><code class="javascript">
+var ourNestedView = React.createElement(
+  View,
+  {
+    foo: 'bar'},
+  React.createElement(
+    Text,
+    null,
+    '42'
+  )
+);
+</code></pre>	
+						<img alt="React" src="assets/whiteboard_42.png" class="feature" style="width: 115px;" />
+					</div>					
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>JSX</h4>
+						<p style="color: #666666;">An extension to JavaScript that you will use to build your UI interfaces.</p>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Without JSX
+
+```js
+var ourNestedView = React.createElement(
+  View,
+  {
+    foo: 'bar'},
+  React.createElement(
+    Text,
+    null,
+    '42'
+  )
+);
+
+```
+
+</div>
+<img alt="console" src="assets/whiteboard_42.png" class="feature" />
+</slide-content-image-right>
+					</textarea
+					>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## With JSX
+
+```js
+const ourNestedView = (
+	<View
+    	foo='bar'>
+    	<Text>42</Text>
+    </View>
+)
+```
+
+</div>
+<img alt="console" src="assets/whiteboard_42.png" class="feature" />
+</slide-content-image-right>
+					</textarea
+					>
+				</section>
 			</div>
 		</div>
 
