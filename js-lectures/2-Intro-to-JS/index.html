@@ -622,8 +622,8 @@ self.view.layer.addSublayer(textLayer)
 </code></pre>
 						  <div>
 						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
-						  <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
-						</div>
+						    <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						  </div>
 						</div>
 						<div class="item">
 							<br />
@@ -694,8 +694,8 @@ self.view.layer.addSublayer(textLayer)
 </code></pre>
 						  <div>
 						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
-						  <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
-						</div>
+						    <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						  </div>
 						</div>
 						<div class="item inactive">
 							<div style="overflow: hidden;">
@@ -800,14 +800,13 @@ var ourNestedView = React.createElement(
 						<p style="color: #666666;">An extension to JavaScript that you will use to build your UI interfaces.</p>
 					</slide-interstitial>
 				</section>
-				<section data-markdown>
-					<textarea data-template>
-<slide-content-image-right>
-<div>
-
-## Without JSX
-
-```js
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 80px;"></div>
+					<h2>Without JSX</h2>
+					<div class="vertical-spacer"></div>
+					<two-column>
+						<div class="item">
+<pre><code class="javascript">
 var ourNestedView = React.createElement(
   View,
   {
@@ -818,36 +817,196 @@ var ourNestedView = React.createElement(
     '42'
   )
 );
-
-```
-
-</div>
-<img alt="console" src="assets/whiteboard_42.png" class="feature" />
-</slide-content-image-right>
-					</textarea
-					>
+</code></pre>
+						</div>
+						<div class="item">
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px; box-shadow: none; border: none;" />
+						</div>
+					</two-column>
 				</section>
-				<section data-markdown>
-					<textarea data-template>
-<slide-content-image-right>
-<div>
-
-## With JSX
-
-```js
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 80px;"></div>
+					<h2>With JSX</h2>
+					<div class="vertical-spacer"></div>
+					<two-column>
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
 	<View
     	foo='bar'>
     	<Text>42</Text>
     </View>
 )
-```
-
-</div>
-<img alt="console" src="assets/whiteboard_42.png" class="feature" />
-</slide-content-image-right>
-					</textarea
-					>
+</code></pre>
+						</div>
+						<div class="item">
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px; box-shadow: none; border: none;" />
+						</div>
+					</two-column>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 80px;"></div>
+					<two-column>
+						<div class="item">
+							<h2>JSX</h2>
+						</div>
+						<div class="item">
+							<h2>No JSX</h2>
+						</div>
+					</two-column>
+					<div style="width: 100%; height: 30px;"></div>
+					<two-column>
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	<View
+    	foo='bar'>
+    	<Text>42</Text>
+    </View>
+)
+</code></pre>
+						</div>
+						<div class="item">
+<pre><code class="javascript">
+var ourNestedView = React.createElement(
+  View,
+  {
+    foo: 'bar'},
+  React.createElement(
+    Text,
+    null,
+    '42'
+  )
+);
+</code></pre>
+						</div>
+					</two-column>
+					<div style="width: 100%; height: 80px;"></div>
+					<p style="text-align: center;">
+						JSX is a shortcut for using the React.createElement() API
+					</p>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 100px;"></div>
+					<two-column>
+						<div class="item"></div>
+						<div class="item" style="justify-content: flex-start;">
+							<h2>JSX Benefits</h2>
+						</div>
+					</two-column>
+					<two-column style="align-items: flex-start;">
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	<View
+    	foo='bar'>
+    	<Text>42</Text>
+    </View>
+)
+</code></pre>
+						</div>
+						<div class="item column">
+							<ul>
+								<li>
+									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
+								</li>
+							</ul>
+						</div>
+					</two-column>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 100px;"></div>
+					<two-column>
+						<div class="item"></div>
+						<div class="item" style="justify-content: flex-start;">
+							<h2>JSX Benefits</h2>
+						</div>
+					</two-column>
+					<two-column style="align-items: flex-start;">
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	<View
+    	foo='bar'>
+    	<Text>42</Text>
+    </View>
+)
+</code></pre>
+						</div>
+						<div class="item column">
+							<ul>
+								<li>
+									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
+								</li>
+							</ul>
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px; box-shadow: none; border: none;" />
+						</div>
+					</two-column>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 100px;"></div>
+					<two-column>
+						<div class="item"></div>
+						<div class="item" style="justify-content: flex-start;">
+							<h2>JSX Benefits</h2>
+						</div>
+					</two-column>
+					<two-column style="align-items: flex-start;">
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	<View
+    	foo='bar'>
+    	<Text>42</Text>
+    </View>
+)
+</code></pre>
+						</div>
+						<div class="item column">
+							<ul>
+								<li>
+									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
+								</li>
+								<li>
+									This makes it easier for designers to contribute to code.
+								</li>
+							</ul>
+						</div>
+					</two-column>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 100px;"></div>
+					<two-column>
+						<div class="item"></div>
+						<div class="item" style="justify-content: flex-start;">
+							<h2>JSX Benefits</h2>
+						</div>
+					</two-column>
+					<two-column style="align-items: flex-start;">
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	<View
+    	foo='bar'>
+    	<Text>42</Text>
+    </View>
+)
+</code></pre>
+						</div>
+						<div class="item column">
+							<ul>
+								<li>
+									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
+								</li>
+								<li>
+									This makes it easier for designers to contribute to code.
+								</li>
+								<li>
+									You get the accessibility of templates AND the power of JS.
+								</li>
+							</ul>
+						</div>
+					</two-column>
 				</section>
 			</div>
 		</div>

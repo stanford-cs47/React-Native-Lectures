@@ -398,3 +398,17 @@ body {
       opacity: 30%; }
     .reveal three-column div.item.column {
       flex-direction: column; }
+
+.reveal two-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .reveal two-column div.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; }
+    .reveal two-column div.item.inactive {
+      opacity: 30%; }
+    .reveal two-column div.item.column {
+      flex-direction: column; }

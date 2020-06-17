@@ -230,4 +230,25 @@ $blockMargin: 10px;
 			}
 		}
 	}
+
+	two-column {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		div {
+			&.item {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+				&.inactive {
+					opacity: 30%;
+				}
+				&.column {
+				  flex-direction: column;
+				}
+			}
+		}
+	}
 }
