@@ -278,10 +278,11 @@ body {
   .backgrounds {
     background-color: #fff; } }
 
-.reveal section img.feature {
+.reveal section img {
   border: none;
-  box-shadow: none;
-  width: 180px; }
+  box-shadow: none; }
+  .reveal section img.feature {
+    width: 180px; }
 
 .reveal section.title-slide {
   height: 100%; }
@@ -322,9 +323,7 @@ body {
     .reveal title-slide-footer resources img.logo {
       width: 40px;
       height: 40px;
-      border: 0;
-      vertical-align: middle;
-      box-shadow: none; }
+      vertical-align: middle; }
   .reveal title-slide-footer instructors {
     text-align: right; }
     .reveal title-slide-footer instructors span.schedule {
@@ -378,9 +377,7 @@ body {
   .reveal carousel img.item {
     display: block;
     width: auto;
-    height: auto;
-    border: none;
-    box-shadow: none; }
+    height: auto; }
     .reveal carousel img.item.inactive {
       opacity: 30%; }
     .reveal carousel img.item.hidden {
@@ -388,7 +385,7 @@ body {
 
 .reveal three-column {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-around; }
   .reveal three-column div.item {
     display: flex;
@@ -398,6 +395,8 @@ body {
       opacity: 30%; }
     .reveal three-column div.item.column {
       flex-direction: column; }
+    .reveal three-column div.item.bordered {
+      border-right: 2px solid lightgrey; }
 
 .reveal two-column {
   display: flex;
@@ -412,3 +411,5 @@ body {
       opacity: 30%; }
     .reveal two-column div.item.column {
       flex-direction: column; }
+    .reveal two-column div.item.bordered {
+      border-right: 2px solid lightgrey; }

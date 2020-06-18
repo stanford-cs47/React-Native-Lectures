@@ -564,7 +564,7 @@ let obj = {
 							<span style="text-align: center;">
 								Unfortunately you will have to deal with autolayout constraints
 							</span>
-							<img alt="iOS" src="assets/sad_face.png" style="border: 0; box-shadow: none; width: 100px;" />
+							<img alt="iOS" src="assets/sad_face.png" style="width: 100px;" />
 						</div>
 						<div style="display:flex; align-items: flex-end; justify-content: flex-end; flex: 1;">
 						  <img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 200px;" />
@@ -820,7 +820,7 @@ var ourNestedView = React.createElement(
 </code></pre>
 						</div>
 						<div class="item">
-							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px; box-shadow: none; border: none;" />
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
 						</div>
 					</two-column>
 				</section>
@@ -832,15 +832,15 @@ var ourNestedView = React.createElement(
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
-	<View
+	&lt;View
     	foo='bar'>
-    	<Text>42</Text>
-    </View>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
 )
 </code></pre>
 						</div>
 						<div class="item">
-							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px; box-shadow: none; border: none;" />
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
 						</div>
 					</two-column>
 				</section>
@@ -859,10 +859,10 @@ const ourNestedView = (
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
-	<View
+	&lt;View
     	foo='bar'>
-    	<Text>42</Text>
-    </View>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
 )
 </code></pre>
 						</div>
@@ -898,10 +898,10 @@ var ourNestedView = React.createElement(
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
-	<View
+	&lt;View
     	foo='bar'>
-    	<Text>42</Text>
-    </View>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
 )
 </code></pre>
 						</div>
@@ -926,10 +926,10 @@ const ourNestedView = (
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
-	<View
+	&lt;View
     	foo='bar'>
-    	<Text>42</Text>
-    </View>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
 )
 </code></pre>
 						</div>
@@ -939,7 +939,7 @@ const ourNestedView = (
 									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
 								</li>
 							</ul>
-							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px; box-shadow: none; border: none;" />
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
 						</div>
 					</two-column>
 				</section>
@@ -955,10 +955,10 @@ const ourNestedView = (
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
-	<View
+	&lt;View
     	foo='bar'>
-    	<Text>42</Text>
-    </View>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
 )
 </code></pre>
 						</div>
@@ -986,10 +986,10 @@ const ourNestedView = (
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
-	<View
+	&lt;View
     	foo='bar'>
-    	<Text>42</Text>
-    </View>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
 )
 </code></pre>
 						</div>
@@ -1007,6 +1007,430 @@ const ourNestedView = (
 							</ul>
 						</div>
 					</two-column>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<three-column>
+						<div class="item column bordered">
+<pre style="width: 90%;"><code class="swift">
+let textLayer = CATextLayer()
+...        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						  <div>
+						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
+						    <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						  </div>
+						</div>
+						<div class="item bordered" style="padding: 0px 4px 0px 4px;">
+							<div style="overflow: hidden;">
+							  <img alt="Android" src="assets/android_layout_xml.png" style="border: none; width: 300px; min-width: 300px;" />
+						    </div>
+						    <div style="overflow: visible;">
+							  <img alt="Android" src="assets/android_layout_2.png" style="border: none; width: 200px; min-width: 200px;" />
+						    </div>
+						</div>
+						<div class="item">
+<pre><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+					</three-column>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item hidden" />
+						<img alt="Android" src="assets/logo_android.png" class="item hidden"/> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<div style="display:flex; align-items: center; justify-content: space-around; height: 400px;">
+						<div style="width: 67%">
+							<img style="width: 695px" src="assets/drag-and-drop-component.gif" />
+						</div>
+						<div style="width: 33%;">
+<pre><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<three-column>
+						<div class="item column bordered">
+<pre style="width: 90%;"><code class="swift">
+let textLayer = CATextLayer()
+...        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						  <div>
+						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
+						    <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						  </div>
+						</div>
+						<div class="item bordered" style="padding: 0px 4px 0px 4px;">
+							<div style="overflow: hidden;">
+							  <img alt="Android" src="assets/android_layout_xml.png" style="border: none; width: 300px; min-width: 300px;" />
+						    </div>
+						    <div style="overflow: visible;">
+							  <img alt="Android" src="assets/android_layout_2.png" style="border: none; width: 200px; min-width: 200px;" />
+						    </div>
+						</div>
+						<div class="item">
+<pre><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+					</three-column>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+<div class="vertical-spacer"></div>
+
+## Overview for today
+* Introduce Javascript Basics
+* Introduce Babel
+* Introduce JSX
+* Create an application from scratch
+    * Breakdown React Native project file structure
+
+</div>
+<img alt="React" src="assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Creating an empty project</h4>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						<div style="display: flex; justify-content: space-around; align-items: center;">
+							<div style="flex-grow: 1;">
+
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+</div>
+                      <div>
+
+```js
+const ourNestedView = (
+  <View
+    foo='bar'>
+    <Text>42</Text>
+  </View>
+)
+```
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						<div style="display: flex; justify-content: space-around; align-items: center;">
+							<div style="flex-grow: 1;">
+
+```js
+render() {
+  return ourNestedView;
+}
+```
+</div>
+                      <div>
+
+```js
+const ourNestedView = (
+  <View
+    foo='bar'>
+    <Text>42</Text>
+  </View>
+)
+```
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+
+<br/>
+<div style="width: 100%; display: flex; justify-content: center;">
+	<div>
+	  React Native calls the render function every time a change occurs.
+   </div>
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+
+<br/>
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+	<div>
+	  React Native calls the render function every time a change occurs.
+   </div>
+   	  <div style="color: darkgray; font-size: 14pt;">
+	  Sneak Peek: there’s something called the “state” of a component. It’s basically a variable that says what to render. When the values of this variable are changed, the render function is called again. You will learn more about a component’s state on week 2.
+	  </div>
+</div>
+					</textarea>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Virtual DOM (Document Object Model)</h4>
+						<p style="color: #000000;">A virtual representation of a desired view state</p>
+						<p style="color: #666666; font-size: 16pt;">(not necessarily the same thing as the DOM on a browser)</p>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+## Virtual DOM (Document Object Model)
+
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 500px;" src="assets/virtual_dom.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+
+<br/>
+<div style="width: 100%; display: flex; justify-content: center;">
+	<div>
+	  React Native calls the render function every time a change occurs.
+   </div>
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 85%;" src="assets/virtual_dom_render_1.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 85%;" src="assets/virtual_dom_render_2.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 85%;" src="assets/react_native_bridge.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						<div style="display: flex; justify-content: space-between; align-items: center;">
+							<div>
+
+```js
+const ourNestedView = (
+  <View
+    foo='bar'>
+    <Text>42</Text>
+  </View>
+)
+```
+<div style="width: 100%; height: 100px;"></div>
+</div>
+                      <div style="flex-grow: 1;">
+                      	<img alt="view map" src="assets/react_native_views.png" style="width: 566px;"/>
+					  </div>
+					</textarea>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Back to project</h4>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 85%;" src="assets/project_generated_files.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+```
+
+<br/>
+<div style="width: 100%; display: flex; justify-content: center;">
+	<div>
+		Basically “CSS” brought to a mobile platform
+		<br/>
+		<a hred="https://github.com/vhpoet/react-native-styling-cheat-sheet">https://github.com/vhpoet/react-native-styling-cheat-sheet</a>
+	</div>
+</div>
+					</textarea>
+				</section>
+				<section class="title-slide">
+					<title-slide-content>
+						<title-slide-header>
+							<h2>CS 47: Cross-Platform Mobile Development</h2>
+							<h4>
+								Lecture 1B: Introduction to Javascript (ES6)
+							</h4>
+						</title-slide-header>
+						<div class="spacer"></div>
+						<title-slide-footer>
+							<resources>
+								<span>https://class.website</span><br />
+								<img
+									src="assets/slack_logo.png"
+									class="logo"
+								/>
+								<span>slack.link</span>
+							</resources>
+							<instructors>
+								<span>Faculty Advisor</span><br />
+								<span>Instructor #1</span><br />
+								<br /><br />
+								<span class="schedule">Fall 2019</span>
+							</instructors>
+						</title-slide-footer>
+					</title-slide-content>
+				</section>
+				<section>
+					<slide-image-content>
+						<feature-image>
+							<img
+								src="assets/slack_channel.png"
+								style="width: 100%; height: 100%; border: 0px;"
+							/>
+						</feature-image>
+						<content>
+							<span class="header">Join our Slack</span>
+							<span class="link"
+								>https://SlackInvitation.link</span
+							>
+						</content>
+					</slide-image-content>
 				</section>
 			</div>
 		</div>
