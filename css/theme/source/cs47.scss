@@ -186,7 +186,7 @@ $blockMargin: 10px;
 
 	carousel {
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: space-around;
 		height: 100px;
 
@@ -195,19 +195,20 @@ $blockMargin: 10px;
 				display: block;
 				width: auto;
 				height: auto;
-
 				&.inactive {
 					opacity: 30%;
 				}
-
 				&.hidden {
 					opacity: 0%;
+				}
+				&.bordered {
+					border-right: 2px solid lightgrey;
 				}
 			}
 		}
 	}
 
-	three-column {
+	three-item {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
@@ -220,6 +221,9 @@ $blockMargin: 10px;
 				&.inactive {
 					opacity: 30%;
 				}
+				&.hidden {
+					opacity: 0%;
+				}
 				&.column {
 					flex-direction: column;
 				}
@@ -230,7 +234,7 @@ $blockMargin: 10px;
 		}
 	}
 
-	two-column {
+	two-item {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
@@ -243,6 +247,9 @@ $blockMargin: 10px;
 				width: 50%;
 				&.inactive {
 					opacity: 30%;
+				}
+				&.hidden {
+					opacity: 0%;
 				}
 				&.column {
 					flex-direction: column;

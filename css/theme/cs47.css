@@ -371,7 +371,7 @@ body {
 
 .reveal carousel {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
   height: 100px; }
   .reveal carousel img.item {
@@ -382,34 +382,40 @@ body {
       opacity: 30%; }
     .reveal carousel img.item.hidden {
       opacity: 0%; }
+    .reveal carousel img.item.bordered {
+      border-right: 2px solid lightgrey; }
 
-.reveal three-column {
+.reveal three-item {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  .reveal three-column div.item {
+  .reveal three-item div.item {
     display: flex;
     align-items: center;
     width: 33%; }
-    .reveal three-column div.item.inactive {
+    .reveal three-item div.item.inactive {
       opacity: 30%; }
-    .reveal three-column div.item.column {
+    .reveal three-item div.item.hidden {
+      opacity: 0%; }
+    .reveal three-item div.item.column {
       flex-direction: column; }
-    .reveal three-column div.item.bordered {
+    .reveal three-item div.item.bordered {
       border-right: 2px solid lightgrey; }
 
-.reveal two-column {
+.reveal two-item {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  .reveal two-column div.item {
+  .reveal two-item div.item {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%; }
-    .reveal two-column div.item.inactive {
+    .reveal two-item div.item.inactive {
       opacity: 30%; }
-    .reveal two-column div.item.column {
+    .reveal two-item div.item.hidden {
+      opacity: 0%; }
+    .reveal two-item div.item.column {
       flex-direction: column; }
-    .reveal two-column div.item.bordered {
+    .reveal two-item div.item.bordered {
       border-right: 2px solid lightgrey; }

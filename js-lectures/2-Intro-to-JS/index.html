@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-	<!-- <html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-montserrat theme-color-white-blue"> -->
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="utf-8" />
@@ -8,9 +7,10 @@
 		<title>deck: Slides</title>
 		<meta name="description" content="Slides" />
 
-		<!-- 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="FSkc0yzcjRtFMzSpQMZdvGWGyzvKosaZHkZRh5M6HZYQDFShSQ8kRpfPCIswev0aSxz2XxUyRHoOb6MnEmx7Jw==" />
-		<style id="user-css-output" type="text/css"></style> -->
+		<!-- 
+		<meta name="csrf-param" content="authenticity_token" />
+		<meta name="csrf-token" content="FSkc0yzcjRtFMzSpQMZdvGWGyzvKosaZHkZRh5M6HZYQDFShSQ8kRpfPCIswev0aSxz2XxUyRHoOb6MnEmx7Jw==" />
+		 -->
 
 		<link rel="stylesheet" href="../../css/reset.css" />
 		<link rel="stylesheet" href="../../css/reveal.css" />
@@ -613,7 +613,7 @@ self.view.layer.addSublayer(textLayer)
 						<img alt="React" src="assets/logo_react.png" class="item inactive" /> 
 					</carousel>
 					<div class="vertical-spacer"></div>
-					<three-column>
+					<three-item>
 						<div class="item column inactive">
 <pre><code class="swift">
 let textLayer = CATextLayer()
@@ -631,7 +631,7 @@ self.view.layer.addSublayer(textLayer)
 						<div class="item">
 							<br />
 						</div>
-					</three-column>
+					</three-item>
 				</section>
 				<section style="height: 100%;">
 					<carousel>
@@ -685,7 +685,7 @@ myLayout.addView(myButton)
 						<img alt="React" src="assets/logo_react.png" class="item" /> 
 					</carousel>
 					<div class="vertical-spacer"></div>
-					<three-column>
+					<three-item>
 						<div class="item column inactive">
 <pre><code class="swift">
 let textLayer = CATextLayer()
@@ -708,7 +708,7 @@ self.view.layer.addSublayer(textLayer)
 						<div class="item">
 							<br />
 						</div>
-					</three-column>
+					</three-item>
 				</section>
 				<section>
 					<slide-interstitial>
@@ -804,7 +804,7 @@ var ourNestedView = React.createElement(
 					<div style="width: 100%; height: 80px;"></div>
 					<h2>Without JSX</h2>
 					<div class="vertical-spacer"></div>
-					<two-column>
+					<two-item>
 						<div class="item">
 <pre><code class="javascript">
 var ourNestedView = React.createElement(
@@ -822,13 +822,13 @@ var ourNestedView = React.createElement(
 						<div class="item">
 							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
 						</div>
-					</two-column>
+					</two-item>
 				</section>
 				<section style="height: 100%;">
 					<div style="width: 100%; height: 80px;"></div>
 					<h2>With JSX</h2>
 					<div class="vertical-spacer"></div>
-					<two-column>
+					<two-item>
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
@@ -842,20 +842,20 @@ const ourNestedView = (
 						<div class="item">
 							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
 						</div>
-					</two-column>
+					</two-item>
 				</section>
 				<section style="height: 100%;">
 					<div style="width: 100%; height: 80px;"></div>
-					<two-column>
+					<two-item>
 						<div class="item">
 							<h2>JSX</h2>
 						</div>
 						<div class="item">
 							<h2>No JSX</h2>
 						</div>
-					</two-column>
+					</two-item>
 					<div style="width: 100%; height: 30px;"></div>
-					<two-column>
+					<two-item>
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
@@ -880,7 +880,7 @@ var ourNestedView = React.createElement(
 );
 </code></pre>
 						</div>
-					</two-column>
+					</two-item>
 					<div style="width: 100%; height: 80px;"></div>
 					<p style="text-align: center;">
 						JSX is a shortcut for using the React.createElement() API
@@ -888,13 +888,13 @@ var ourNestedView = React.createElement(
 				</section>
 				<section style="height: 100%;">
 					<div style="width: 100%; height: 100px;"></div>
-					<two-column>
+					<two-item>
 						<div class="item"></div>
 						<div class="item" style="justify-content: flex-start;">
 							<h2>JSX Benefits</h2>
 						</div>
-					</two-column>
-					<two-column style="align-items: flex-start;">
+					</two-item>
+					<two-item style="align-items: flex-start;">
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
@@ -912,17 +912,17 @@ const ourNestedView = (
 								</li>
 							</ul>
 						</div>
-					</two-column>
+					</two-item>
 				</section>
 				<section style="height: 100%;">
 					<div style="width: 100%; height: 100px;"></div>
-					<two-column>
+					<two-item>
 						<div class="item"></div>
 						<div class="item" style="justify-content: flex-start;">
 							<h2>JSX Benefits</h2>
 						</div>
-					</two-column>
-					<two-column style="align-items: flex-start;">
+					</two-item>
+					<two-item style="align-items: flex-start;">
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
@@ -941,17 +941,17 @@ const ourNestedView = (
 							</ul>
 							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
 						</div>
-					</two-column>
+					</two-item>
 				</section>
 				<section style="height: 100%;">
 					<div style="width: 100%; height: 100px;"></div>
-					<two-column>
+					<two-item>
 						<div class="item"></div>
 						<div class="item" style="justify-content: flex-start;">
 							<h2>JSX Benefits</h2>
 						</div>
-					</two-column>
-					<two-column style="align-items: flex-start;">
+					</two-item>
+					<two-item style="align-items: flex-start;">
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
@@ -972,17 +972,17 @@ const ourNestedView = (
 								</li>
 							</ul>
 						</div>
-					</two-column>
+					</two-item>
 				</section>
 				<section style="height: 100%;">
 					<div style="width: 100%; height: 100px;"></div>
-					<two-column>
+					<two-item>
 						<div class="item"></div>
 						<div class="item" style="justify-content: flex-start;">
 							<h2>JSX Benefits</h2>
 						</div>
-					</two-column>
-					<two-column style="align-items: flex-start;">
+					</two-item>
+					<two-item style="align-items: flex-start;">
 						<div class="item">
 <pre style="width: 70%;"><code class="javascript">
 const ourNestedView = (
@@ -1006,7 +1006,7 @@ const ourNestedView = (
 								</li>
 							</ul>
 						</div>
-					</two-column>
+					</two-item>
 				</section>
 				<section style="height: 100%;">
 					<carousel>
@@ -1015,7 +1015,7 @@ const ourNestedView = (
 						<img alt="React" src="assets/logo_react.png" class="item" /> 
 					</carousel>
 					<div class="vertical-spacer"></div>
-					<three-column>
+					<three-item>
 						<div class="item column bordered">
 <pre style="width: 90%;"><code class="swift">
 let textLayer = CATextLayer()
@@ -1045,7 +1045,7 @@ const ourNestedView = (
 )
 </code></pre>
 						</div>
-					</three-column>
+					</three-item>
 				</section>
 				<section style="height: 100%;">
 					<carousel>
@@ -1077,7 +1077,7 @@ const ourNestedView = (
 						<img alt="React" src="assets/logo_react.png" class="item" /> 
 					</carousel>
 					<div class="vertical-spacer"></div>
-					<three-column>
+					<three-item>
 						<div class="item column bordered">
 <pre style="width: 90%;"><code class="swift">
 let textLayer = CATextLayer()
@@ -1107,7 +1107,7 @@ const ourNestedView = (
 )
 </code></pre>
 						</div>
-					</three-column>
+					</three-item>
 				</section>
 				<section data-markdown>
 					<textarea data-template>
@@ -1415,22 +1415,6 @@ const styles = StyleSheet.create({
 							</instructors>
 						</title-slide-footer>
 					</title-slide-content>
-				</section>
-				<section>
-					<slide-image-content>
-						<feature-image>
-							<img
-								src="assets/slack_channel.png"
-								style="width: 100%; height: 100%; border: 0px;"
-							/>
-						</feature-image>
-						<content>
-							<span class="header">Join our Slack</span>
-							<span class="link"
-								>https://SlackInvitation.link</span
-							>
-						</content>
-					</slide-image-content>
 				</section>
 			</div>
 		</div>
