@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>deck: Slides</title>
+		<meta name="description" content="Slides" />
+
+		<!-- 
+		<meta name="csrf-param" content="authenticity_token" />
+		<meta name="csrf-token" content="FSkc0yzcjRtFMzSpQMZdvGWGyzvKosaZHkZRh5M6HZYQDFShSQ8kRpfPCIswev0aSxz2XxUyRHoOb6MnEmx7Jw==" />
+		 -->
+
+		<link rel="stylesheet" href="../../css/reset.css" />
+		<link rel="stylesheet" href="../../css/reveal.css" />
+		<link rel="stylesheet" href="../../css/theme/cs47.css" id="theme" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../lib/css/xcode.css" />
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement("link");
+			link.rel = "stylesheet";
+			link.type = "text/css";
+			link.href = window.location.search.match(/print-pdf/gi)
+				? "../../css/print/pdf.css"
+				: "../../css/print/paper.css";
+			document.getElementsByTagName("head")[0].appendChild(link);
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="title-slide">
+					<title-slide-content>
+						<title-slide-header>
+							<h2>CS 47: Cross-Platform Mobile Development</h2>
+							<h4>
+								Lecture 1B: Introduction to Javascript (ES6)
+							</h4>
+						</title-slide-header>
+						<div class="spacer"></div>
+						<title-slide-footer>
+							<resources>
+								<span>https://class.website</span><br />
+								<img
+									src="assets/slack_logo.png"
+									class="logo"
+								/>
+								<span>slack.link</span>
+							</resources>
+							<instructors>
+								<span>Faculty Advisor</span><br />
+								<span>Instructor #1</span><br />
+								<br /><br />
+								<span class="schedule">Fall 2019</span>
+							</instructors>
+						</title-slide-footer>
+					</title-slide-content>
+				</section>
+				<section>
+					<slide-image-content>
+						<feature-image>
+							<img
+								src="assets/slack_channel.png"
+								style="width: 100%; height: 100%; border: 0px;"
+							/>
+						</feature-image>
+						<content>
+							<span class="header">Join our Slack</span>
+							<span class="link"
+								>https://SlackInvitation.link</span
+							>
+						</content>
+					</slide-image-content>
+				</section>
+				<section>
+					<slide-image-content>
+						<feature-image>
+							<img
+								src="assets/class_website.png"
+								style="width: 70%; height: 70%; border: 0px;"
+							/>
+						</feature-image>
+						<content>
+							<span class="header">Keep up with the website</span>
+							<span class="link">https://class.website</span>
+						</content>
+					</slide-image-content>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+</div>
+<img alt="React" src="assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Why do you want to take this class?
+(Answers from last lecture exit ticket)
+
+</div>
+<img alt="React" src="assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+</div>
+<img alt="React" src="assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+<div class="vertical-spacer"></div>
+
+## Overview for today
+* Introduce Javascript Basics
+* Introduce Babel
+* Introduce JSX
+* Create an application from scratch
+    * Breakdown React Native project file structure
+
+</div>
+<img alt="React" src="assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section>
+					<slide-interstitial>
+						<h2><u>https://es6console.com/</u></h2>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Variables
+
+In ES6, variables:
+* Don't have types
+* But must be declared before using them
+
+* Global variables
+
+```js
+var x = 1;
+
+if (x === 1) {
+  var x = 2;
+  console.log(x);
+  // expected output: 2
+}  
+
+console.log(x); // expected output: 2
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea
+					>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Variables
+
+In ES6, variables:
+* Don't have types
+* But must be declared before using them
+
+* Local variables
+
+```js
+let x = 1;
+
+if (x === 1) {
+  let x = 2;
+  console.log(x);
+  // expected output: 2
+}  
+
+console.log(x); // expected output: 1
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea
+					>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Variables
+
+In ES6, variables:
+* Don't have types
+* But must be declared before using them
+
+* Const variables
+
+```js
+const x = 1;
+
+if (x === 1) {
+
+  // Error
+  x = 2;
+  console.log(x);
+  // expected output: 2
+}  
+
+console.log(x); // expected output: 1
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea
+					>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+
+## JS: Variables
+
+|        | Global Variables                                      | Local Variables                                     | Constant Variables                                             |
+|--------|-------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------|
+| Use    | The scope here is the function in which it’s declared | The scope here is the block in which it is declared | The scope here is the block, but it cannot be changed in value |
+| Syntax | var x = 10;                                           | let x = 10;                                         | const x = 10;                                                  |
+
+
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: If statements
+
+<img alt="ES6" src="assets/js_if_statements.png" width="300" />
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea
+					>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: If statements
+
+JS needs special care with equality
+
+**If in doubt use === and !== (or use them always)**
+
+<div class="vertical-spacer"></div>
+
+Example:
+
+```js
+if (a > 0) {
+    return "positive";
+} else if (a === 0) {
+    return "It's a zero";
+} else {
+    return "NOT positive";
+}
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea
+					>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Loops
+
+You have many options for loops in JS:
+
+* For loops:
+
+```js
+for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+```
+
+<div class="vertical-spacer"></div>
+
+* For *of* loops:
+
+```js
+for (var element of arr) {
+    console.log(element);
+}
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Loops
+
+You have many options for loops in JS:
+
+* For *each* loops:
+
+```js
+arr.forEach(function(element) {
+    console.log(element);
+});
+```
+
+<div class="vertical-spacer"></div>
+
+* While loops:
+
+```js
+while (true) {
+    console.log("You can't stop me");
+}
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Functions
+
+* Functions in JS are declared in the following way:
+
+```js
+function addition(a, b = 10) {
+    return a + b;
+}
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Functions
+
+* Functions in JS are declared in the following way:
+
+```js
+function addition(a, b = 10) {
+    return a + b;
+}
+```
+
+<div class="vertical-spacer"></div>
+
+* Another way is as follows:
+
+```js
+var addition = (a, b = 10) => {
+    return a + b;
+}
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Functions
+
+* Functions in JS can turn passed in arguments to arrays:
+
+```js
+function addition(a, ...b) {
+    return a + b.length;
+}
+console.log(addition(2,1,7,5));
+// 2 + 3 = 5
+```
+
+<div class="vertical-spacer"></div>
+
+* On the opposite side, we can do:
+
+```js
+function addition(a, b, c) {
+    return a + b + c;
+}
+console.log(addition(...[1,2,3]));
+// 1 + 2 + 3 = 6
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## JS: Functions
+
+* Objects are similar to dictionaries and/or maps in other languages:
+
+```js
+let obj = {
+    name: ‘John’,
+    age: 17,
+};
+console.log(obj.name + ' ' + obj['age']);
+```
+
+<div class="vertical-spacer"></div>
+
+* Other ways of representing properties:
+
+```js
+let obj = {
+    ['full' + 'name']: 'John Doe',
+    //same as age: age
+    age,
+    lorem() {
+        return "ipsum";
+    },
+};
+```
+
+</div>
+<img alt="ES6" src="assets/es6.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+<div class="vertical-spacer"></div>
+
+## Overview for today
+* Introduce Javascript Basics
+* Introduce Babel
+* Introduce JSX
+* Create an application from scratch
+    * Breakdown React Native project file structure
+
+</div>
+<img alt="React" src="assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item" /> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item inactive"/> 
+						<img alt="React" src="assets/logo_react.png" class="item inactive" /> 
+					</carousel>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item hidden"/> 
+						<img alt="React" src="assets/logo_react.png" class="item hidden" /> 
+					</carousel>
+					<div style="display:flex; align-items: flex-end; justify-content: space-between;">
+						<div class="spacer"></div>
+						<div>
+						  <img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 200px;" />
+						  <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 200px;" />
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item hidden"/> 
+						<img alt="React" src="assets/logo_react.png" class="item hidden" /> 
+					</carousel>
+					<div style="display:flex; align-items: flex-end;">
+						<div style="display:flex; flex-direction: column; align-items: center; flex: 1;">
+							<span style="text-align: center;">
+								Unfortunately you will have to deal with autolayout constraints
+							</span>
+							<img alt="iOS" src="assets/sad_face.png" style="width: 100px;" />
+						</div>
+						<div style="display:flex; align-items: flex-end; justify-content: flex-end; flex: 1;">
+						  <img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 200px;" />
+						  <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 200px;" />
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item hidden"/> 
+						<img alt="React" src="assets/logo_react.png" class="item hidden" /> 
+					</carousel>
+					<div style="display:flex; align-items: flex-end; justify-content: space-between;">
+						<div style="width: 50%;">
+<pre><code class="swift">
+let textLayer = CATextLayer()
+textLayer.backgroundColor = color.cgColor       
+
+textLayer.foregroundColor = 
+  UIColor.white.cgColor
+textLayer.frame = frame
+textLayer.alignmentMode = kCAAlignmentLeft
+textLayer.isWrapped = true
+let font = CTFontCreateWithName(
+  "System" as CFString, 18.0, nil)
+textLayer.font = font
+textLayer.fontSize = 18.0
+textLayer.contentsScale = 
+  UIScreen.main.scale
+textLayer.string = label
+        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						</div>
+						<div style="display:flex; align-items: flex-end; justify-content: flex-end;">
+						  <img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 200px;" />
+						  <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 200px;" />
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item inactive" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item inactive" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<three-item>
+						<div class="item column inactive">
+<pre><code class="swift">
+let textLayer = CATextLayer()
+...        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						  <div>
+						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
+						    <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						  </div>
+						</div>
+						<div class="item">
+							<br />
+						</div>
+						<div class="item">
+							<br />
+						</div>
+					</three-item>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item hidden" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item hidden" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<div style="display:flex; align-items: flex-end; justify-content: space-between;">
+						<div style="width: 50%;">
+<pre><code class="java">
+LinearLayout myLayout = findViewById(R.id.main);
+
+Button myButton = new Button(this);
+
+myButton.setLayoutParams(new LinearLayout.LayoutParams(
+
+LinearLayout.LayoutParams.MATCH_PARENT,
+LinearLayout.LayoutParams.MATCH_PARENT));
+
+myLayout.addView(myButton)
+</code></pre>
+						</div>
+						<div style="display:flex; align-items: flex-start; justify-content: flex-end;">
+						  <img alt="iOS" src="assets/android_layout_1.png" style="border: none; width: 200px;" />
+						  <img alt="iOS" src="assets/android_layout_2.png" style="border: none; width: 200px;" />
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item hidden" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item hidden" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<div style="display:flex; align-items: flex-end; justify-content: space-between;">
+						<div style="width: 50%;">
+							<img alt="Android" src="assets/android_layout_xml.png" style="border: none; width: 450px;" />
+						</div>
+						<div style="display:flex; align-items: flex-start; justify-content: flex-end;">
+						  <img alt="Android" src="assets/android_layout_1.png" style="border: none; width: 200px;" />
+						  <img alt="Android" src="assets/android_layout_2.png" style="border: none; width: 200px;" />
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item inactive" />
+						<img alt="Android" src="assets/logo_android.png" class="item inactive"/> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<three-item>
+						<div class="item column inactive">
+<pre><code class="swift">
+let textLayer = CATextLayer()
+...        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						  <div>
+						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
+						    <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						  </div>
+						</div>
+						<div class="item inactive">
+							<div style="overflow: hidden;">
+							  <img alt="Android" src="assets/android_layout_xml.png" style="border: none; width: 300px; min-width: 300px;" />
+						    </div>
+						    <div style="overflow: visible;">
+							  <img alt="Android" src="assets/android_layout_2.png" style="border: none; width: 200px; min-width: 200px;" />
+						    </div>
+						</div>
+						<div class="item">
+							<br />
+						</div>
+					</three-item>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>How do we build layouts in React Native?</h4>
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>How do we build layouts in React Native?</h4>
+						<p style="color: #666666;">Programmatically (in markup style) — this means no drag and drop interface builder.</p>
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Originally, the process of creating a View using React looked like this:</h4>
+<pre style="width: 50%;"><code class="javascript">
+var ourView = React.createElement(View, null);
+</code></pre>						
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<div style="width: 115px; position: relative;">
+							<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 100%;" />
+						</div>
+						<div style="left: 46%; top: 15px; width: 115px; position: absolute;">
+							<img alt="React" src="assets/whiteboard.png" class="feature" style="
+				width: 60%;" />
+						</div>
+						<h4>Originally, the process of creating a View using React looked like this:</h4>
+<pre style="width: 50%;"><code class="javascript">
+var ourView = React.createElement(View, null);
+</code></pre>						
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Originally, the process of nesting Text within a View using React looked like this:</h4>
+<pre style="width: 50%;"><code class="javascript">
+var ourNestedView = React.createElement(
+  View,
+  {
+    foo: 'bar'},
+  React.createElement(
+    Text,
+    null,
+    '42'
+  )
+);
+</code></pre>						
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Originally, the process of nesting Text within a View using React looked like this:</h4>
+						<div style="display: flex; width: 100%;">
+<pre style="width: 50%;"><code class="javascript">
+var ourNestedView = React.createElement(
+  View,
+  {
+    foo: 'bar'},
+  React.createElement(
+    Text,
+    null,
+    '42'
+  )
+);
+</code></pre>	
+						<img alt="React" src="assets/whiteboard_42.png" class="feature" style="width: 115px;" />
+					</div>					
+					</slide-interstitial>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>JSX</h4>
+						<p style="color: #666666;">An extension to JavaScript that you will use to build your UI interfaces.</p>
+					</slide-interstitial>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 80px;"></div>
+					<h2>Without JSX</h2>
+					<div class="vertical-spacer"></div>
+					<two-item>
+						<div class="item">
+<pre><code class="javascript">
+var ourNestedView = React.createElement(
+  View,
+  {
+    foo: 'bar'},
+  React.createElement(
+    Text,
+    null,
+    '42'
+  )
+);
+</code></pre>
+						</div>
+						<div class="item">
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
+						</div>
+					</two-item>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 80px;"></div>
+					<h2>With JSX</h2>
+					<div class="vertical-spacer"></div>
+					<two-item>
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+						<div class="item">
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
+						</div>
+					</two-item>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 80px;"></div>
+					<two-item>
+						<div class="item">
+							<h2>JSX</h2>
+						</div>
+						<div class="item">
+							<h2>No JSX</h2>
+						</div>
+					</two-item>
+					<div style="width: 100%; height: 30px;"></div>
+					<two-item>
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+						<div class="item">
+<pre><code class="javascript">
+var ourNestedView = React.createElement(
+  View,
+  {
+    foo: 'bar'},
+  React.createElement(
+    Text,
+    null,
+    '42'
+  )
+);
+</code></pre>
+						</div>
+					</two-item>
+					<div style="width: 100%; height: 80px;"></div>
+					<p style="text-align: center;">
+						JSX is a shortcut for using the React.createElement() API
+					</p>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 100px;"></div>
+					<two-item>
+						<div class="item"></div>
+						<div class="item" style="justify-content: flex-start;">
+							<h2>JSX Benefits</h2>
+						</div>
+					</two-item>
+					<two-item style="align-items: flex-start;">
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+						<div class="item column">
+							<ul>
+								<li>
+									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
+								</li>
+							</ul>
+						</div>
+					</two-item>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 100px;"></div>
+					<two-item>
+						<div class="item"></div>
+						<div class="item" style="justify-content: flex-start;">
+							<h2>JSX Benefits</h2>
+						</div>
+					</two-item>
+					<two-item style="align-items: flex-start;">
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+						<div class="item column">
+							<ul>
+								<li>
+									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
+								</li>
+							</ul>
+							<img alt="console" src="assets/whiteboard_42.png" style="width: 120px;" />
+						</div>
+					</two-item>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 100px;"></div>
+					<two-item>
+						<div class="item"></div>
+						<div class="item" style="justify-content: flex-start;">
+							<h2>JSX Benefits</h2>
+						</div>
+					</two-item>
+					<two-item style="align-items: flex-start;">
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+						<div class="item column">
+							<ul>
+								<li>
+									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
+								</li>
+								<li>
+									This makes it easier for designers to contribute to code.
+								</li>
+							</ul>
+						</div>
+					</two-item>
+				</section>
+				<section style="height: 100%;">
+					<div style="width: 100%; height: 100px;"></div>
+					<two-item>
+						<div class="item"></div>
+						<div class="item" style="justify-content: flex-start;">
+							<h2>JSX Benefits</h2>
+						</div>
+					</two-item>
+					<two-item style="align-items: flex-start;">
+						<div class="item">
+<pre style="width: 70%;"><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+						<div class="item column">
+							<ul>
+								<li>
+									UI has a clear hierarchical structure. What you see in code mirrors what you will get.
+								</li>
+								<li>
+									This makes it easier for designers to contribute to code.
+								</li>
+								<li>
+									You get the accessibility of templates AND the power of JS.
+								</li>
+							</ul>
+						</div>
+					</two-item>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<three-item>
+						<div class="item column bordered">
+<pre style="width: 90%;"><code class="swift">
+let textLayer = CATextLayer()
+...        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						  <div>
+						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
+						    <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						  </div>
+						</div>
+						<div class="item bordered" style="padding: 0px 4px 0px 4px;">
+							<div style="overflow: hidden;">
+							  <img alt="Android" src="assets/android_layout_xml.png" style="border: none; width: 300px; min-width: 300px;" />
+						    </div>
+						    <div style="overflow: visible;">
+							  <img alt="Android" src="assets/android_layout_2.png" style="border: none; width: 200px; min-width: 200px;" />
+						    </div>
+						</div>
+						<div class="item">
+<pre><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+					</three-item>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item hidden" />
+						<img alt="Android" src="assets/logo_android.png" class="item hidden"/> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<div style="display:flex; align-items: center; justify-content: space-around; height: 400px;">
+						<div style="width: 67%">
+							<img style="width: 695px" src="assets/drag-and-drop-component.gif" />
+						</div>
+						<div style="width: 33%;">
+<pre><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+					    </div>
+					</div>
+				</section>
+				<section style="height: 100%;">
+					<carousel>
+						<img alt="iOS" src="assets/logo_apple.png" class="item" />
+						<img alt="Android" src="assets/logo_android.png" class="item"/> 
+						<img alt="React" src="assets/logo_react.png" class="item" /> 
+					</carousel>
+					<div class="vertical-spacer"></div>
+					<three-item>
+						<div class="item column bordered">
+<pre style="width: 90%;"><code class="swift">
+let textLayer = CATextLayer()
+...        
+self.view.layer.addSublayer(textLayer)
+</code></pre>
+						  <div>
+						  	<img alt="iOS" src="assets/xcode_layout_1.png" style="border: none; width: 45%;" />
+						    <img alt="iOS" src="assets/xcode_layout_2.png" style="border: none; width: 45%;" />
+						  </div>
+						</div>
+						<div class="item bordered" style="padding: 0px 4px 0px 4px;">
+							<div style="overflow: hidden;">
+							  <img alt="Android" src="assets/android_layout_xml.png" style="border: none; width: 300px; min-width: 300px;" />
+						    </div>
+						    <div style="overflow: visible;">
+							  <img alt="Android" src="assets/android_layout_2.png" style="border: none; width: 200px; min-width: 200px;" />
+						    </div>
+						</div>
+						<div class="item">
+<pre><code class="javascript">
+const ourNestedView = (
+	&lt;View
+    	foo='bar'>
+    	&lt;Text>42&lt;/Text>
+    &lt;/View>
+)
+</code></pre>
+						</div>
+					</three-item>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<slide-content-image-right>
+<div>
+
+## Last lecture
+* Introduced CS 47 and React Native as a framework
+* Briefly touched up on environment setup
+* Assignment 1 due Tuesday, October 1st, at 11:59 PM
+
+<div class="vertical-spacer"></div>
+
+## Overview for today
+* Introduce Javascript Basics
+* Introduce Babel
+* Introduce JSX
+* Create an application from scratch
+    * Breakdown React Native project file structure
+
+</div>
+<img alt="React" src="assets/react.png" class="feature" />
+</slide-content-image-right>
+					</textarea>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Creating an empty project</h4>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						<div style="display: flex; justify-content: space-around; align-items: center;">
+							<div style="flex-grow: 1;">
+
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+</div>
+                      <div>
+
+```js
+const ourNestedView = (
+  <View
+    foo='bar'>
+    <Text>42</Text>
+  </View>
+)
+```
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						<div style="display: flex; justify-content: space-around; align-items: center;">
+							<div style="flex-grow: 1;">
+
+```js
+render() {
+  return ourNestedView;
+}
+```
+</div>
+                      <div>
+
+```js
+const ourNestedView = (
+  <View
+    foo='bar'>
+    <Text>42</Text>
+  </View>
+)
+```
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+
+<br/>
+<div style="width: 100%; display: flex; justify-content: center;">
+	<div>
+	  React Native calls the render function every time a change occurs.
+   </div>
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+
+<br/>
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+	<div>
+	  React Native calls the render function every time a change occurs.
+   </div>
+   	  <div style="color: darkgray; font-size: 14pt;">
+	  Sneak Peek: there’s something called the “state” of a component. It’s basically a variable that says what to render. When the values of this variable are changed, the render function is called again. You will learn more about a component’s state on week 2.
+	  </div>
+</div>
+					</textarea>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Virtual DOM (Document Object Model)</h4>
+						<p style="color: #000000;">A virtual representation of a desired view state</p>
+						<p style="color: #666666; font-size: 16pt;">(not necessarily the same thing as the DOM on a browser)</p>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+## Virtual DOM (Document Object Model)
+
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 500px;" src="assets/virtual_dom.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+render() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Changes you make will automatically reload.</Text>
+      <Text>Shake your phone to open the developer menu.</Text>
+    </View>
+  );
+}
+```
+
+<br/>
+<div style="width: 100%; display: flex; justify-content: center;">
+	<div>
+	  React Native calls the render function every time a change occurs.
+   </div>
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 85%;" src="assets/virtual_dom_render_1.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 85%;" src="assets/virtual_dom_render_2.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 85%;" src="assets/react_native_bridge.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						<div style="display: flex; justify-content: space-between; align-items: center;">
+							<div>
+
+```js
+const ourNestedView = (
+  <View
+    foo='bar'>
+    <Text>42</Text>
+  </View>
+)
+```
+<div style="width: 100%; height: 100px;"></div>
+</div>
+                      <div style="flex-grow: 1;">
+                      	<img alt="view map" src="assets/react_native_views.png" style="width: 566px;"/>
+					  </div>
+					</textarea>
+				</section>
+				<section>
+					<slide-interstitial>
+						<img alt="React" src="assets/logo_react.png" class="feature" style="
+				width: 115px;" />
+						<h4>Back to project</h4>
+					</slide-interstitial>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+<div style="width: 100%; display: flex; justify-content: center;">
+<img style="width: 85%;" src="assets/project_generated_files.png" />
+</div>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+```js
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+```
+
+<br/>
+<div style="width: 100%; display: flex; justify-content: center;">
+	<div>
+		Basically “CSS” brought to a mobile platform
+		<br/>
+		<a hred="https://github.com/vhpoet/react-native-styling-cheat-sheet">https://github.com/vhpoet/react-native-styling-cheat-sheet</a>
+	</div>
+</div>
+					</textarea>
+				</section>
+				<section class="title-slide">
+					<title-slide-content>
+						<title-slide-header>
+							<h2>CS 47: Cross-Platform Mobile Development</h2>
+							<h4>
+								Lecture 1B: Introduction to Javascript (ES6)
+							</h4>
+						</title-slide-header>
+						<div class="spacer"></div>
+						<title-slide-footer>
+							<resources>
+								<span>https://class.website</span><br />
+								<img
+									src="assets/slack_logo.png"
+									class="logo"
+								/>
+								<span>slack.link</span>
+							</resources>
+							<instructors>
+								<span>Faculty Advisor</span><br />
+								<span>Instructor #1</span><br />
+								<br /><br />
+								<span class="schedule">Fall 2019</span>
+							</instructors>
+						</title-slide-footer>
+					</title-slide-content>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: "../../plugin/markdown/marked.js" },
+					{ src: "../../plugin/markdown/markdown.js" },
+					{ src: "../../plugin/notes/notes.js", async: true },
+					{ src: "../../plugin/highlight/highlight.js", async: true },
+				],
+			});
+		</script>
+	</body>
+</html>
